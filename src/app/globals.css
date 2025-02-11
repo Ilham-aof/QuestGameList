@@ -7,8 +7,8 @@
   textarea, select {
     @apply border rounded-xl shadow-md w-full block p-2;
   }
-}
 
-button{
-  @apply bg-blue-500 text-white rounded-xl p-2 transition-colors hover:bg-blue-800
+  .common-button{
+    @apply bg-blue-500 text-white rounded-xl p-2 transition-colors hover:bg-blue-800;
+  }
 }

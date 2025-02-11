@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { QuestUpdate } from "../_components/quest-update";
 
 export default async function Page({params}) {
@@ -23,7 +24,11 @@ export default async function Page({params}) {
               </div>
           </div>
         </div>
-        <QuestUpdate id={data._id} questTitle={data.quest_title} questCategory={data.quest_category} questObjective={data.quest_objective} questDescription={data.quest_description} questStatus={data.status}/>
+        <form>
+          <Link href={`/quest/${id}/edit_quest`}>
+            <button className="common-button">Edit Quest</button>
+          </Link>  
+        </form>    
       </main>
     );
   }
@@ -46,7 +51,11 @@ export default async function Page({params}) {
               </div>
           </div>
         </div>
-        <QuestUpdate id={data._id} questTitle={data.quest_title} questCategory={data.quest_category} questObjective={data.quest_objective} questDescription={data.quest_description} questStatus={data.status}/>
+        <form>
+          <Link href={`/quest/${id}/edit_quest`}>
+            <button className="common-button">Edit Quest</button>
+          </Link>  
+        </form>    
       </main>
     );
   }
@@ -69,7 +78,11 @@ export default async function Page({params}) {
               </div>
           </div>
         </div>
-        <QuestUpdate id={data._id} questTitle={data.quest_title} questCategory={data.quest_category} questObjective={data.quest_objective} questDescription={data.quest_description} questStatus={data.status}/>
+        <form>
+          <Link href={`/quest/${id}/edit_quest`}>
+            <button className="common-button">Edit Quest</button>
+          </Link>  
+        </form>    
       </main>
     );
   }
@@ -92,7 +105,11 @@ export default async function Page({params}) {
               </div>
           </div>
         </div>
-        <QuestUpdate id={data._id} questTitle={data.quest_title} questCategory={data.quest_category} questObjective={data.quest_objective} questDescription={data.quest_description} questStatus={data.status}/>
+        <form>
+          <Link href={`/quest/${id}/edit_quest`}>
+            <button className="common-button">Edit Quest</button>
+          </Link>  
+        </form>    
       </main>
     );
   }
@@ -114,7 +131,11 @@ export default async function Page({params}) {
         </div>
       </div>
     </div>
-    <QuestUpdate id={data._id} questTitle={data.quest_title} questCategory={data.quest_category} questObjective={data.quest_objective} questDescription={data.quest_description} questStatus={data.status}/>
+    <form>
+      <Link href={`/quest/${id}/edit_quest`}>
+        <button className="common-button">Edit Quest</button>
+      </Link>  
+    </form>    
   </main>
   );
 }

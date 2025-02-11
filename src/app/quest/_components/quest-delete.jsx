@@ -25,7 +25,7 @@ export const QuestDelete = async ({id, status}) => {
       <form action={deleteQuestAction}>
             <input name="quest-id" defaultValue={id} hidden/>
             <input name="quest-status" defaultValue={status} hidden/>
-            <button className="bg-green-600 text-xs text-white px-2 py-1">Done</button>
+            <button className="bg-green-600 text-xs text-white px-2 py-1 rounded-xl transition-colors hover:bg-green-800">Done</button>
       </form>
     )    
   }
@@ -33,7 +33,7 @@ export const QuestDelete = async ({id, status}) => {
     <form action={deleteQuestAction}>
           <input name="quest-id" defaultValue={id} hidden/>
           <input name="quest-status" defaultValue={status} hidden/>
-          <button className="bg-red-600 text-xs text-white px-2 py-1">Delete</button>
+          <button className="bg-red-600 text-xs text-white px-2 py-1 rounded-xl transition-colors hover:bg-red-800">Delete</button>
     </form>
   )
 }

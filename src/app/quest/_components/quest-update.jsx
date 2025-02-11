@@ -24,7 +24,7 @@ export const QuestUpdate = async ({id, questTitle, questCategory, questObjective
 
   return (
     <section>
-    <h2 className="font-bold text-2xl">Update Quest</h2>
+    <h2 className="font-bold text-2xl">Edit Quest</h2>
     <form className="space-y-2" action={updateQuestAction}>
       <input name="quest-id" defaultValue={id} hidden/>
       <p>Quest Title</p>
@@ -45,7 +45,7 @@ export const QuestUpdate = async ({id, questTitle, questCategory, questObjective
         <option value="Finish">Finish</option>
         <option value="Unfinish">Unfinish</option>
       </select>
-      <button>Update Quest</button>
+      <button className="common-button">Update Quest</button>
     </form>
   </section>
   )

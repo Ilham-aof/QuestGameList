@@ -42,7 +42,7 @@ export const QuestCreate = async () => {
       <p>Quest Description</p>
       <textarea name="quest-description" placeholder="Description"/>
       <input name="quest-status" defaultValue={"Unfinish"} hidden/>
-      <button>New Quest</button>
+      <button className="common-button">Create Quest</button>
     </form>
   </section>
   )
